@@ -1,0 +1,2 @@
+Ce répertoire contient l'ensemble des classe appelant les fonctions du package actions
+On y trouvera par exemple les fonctions Connexions et Déconnexion, dont les actions appeleront les classes du package action

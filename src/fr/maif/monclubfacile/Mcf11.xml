@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="MonClubFacile-TNR"  >
+
+ 	<test name="NomduProjet-1-chrome">
+ 		<parameter name="platform" value="WINDOWS" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="55" />
+		<!-- Indiquez l'URL d'accès au site à tester -->
+  		<parameter name="baseUrl" value="https://monclubfacile.preprod.opunmaif.fr/" />
+		
+		<classes>
+		<!-- Idniquez la ou les classes java qui teste le site et qui sont à lancer -->
+			<class name="fr.maif.monclubfacile.tnr.scenarii.PageMesVirements" />
+		</classes>
+	</test>	  
+</suite>	

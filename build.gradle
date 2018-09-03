@@ -1,0 +1,52 @@
+apply plugin: 'java'
+
+clean{
+    delete "build/"
+    delete "log/"
+}
+
+allprojects {
+    tasks.withType(JavaCompile) {
+        options.encoding = 'UTF-8'
+    }
+        
+    tasks.withType(Test) {
+       systemProperty "file.encoding", "UTF-8"
+    }
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ['src']
+        }
+        resources {
+            srcDirs = ['src']
+        }
+    }
+}
+
+
+repositories {
+   flatDir {
+       dirs 'lib'
+   }
+}
+
+dependencies {
+    // add the dependencies as needed
+    println 'Compilation des librairies'
+    testCompile group: 'org.testng', name: 'testng', version:'6.8.5'
+    testCompile fileTree('lib')
+}
+
+
+test {
+	println 'Running TNR test'
+    useTestNG() {
+        // runlist to executed. path is relative to current folder
+        println 'Lecture Fichier Config TNR '
+        suites 'src/Launch.xml'
+    }
+    println 'Sortie test'
+}

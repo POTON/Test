@@ -1,0 +1,3 @@
+Ce répertoire contient les scripts de tests appelant des modules
+Les scripts présents dans ce package ne doivent pas contenir d'appel direct aux classes du package actions.
+Ceux sont les classes du package modules qui doivent appeler les classes du package actions

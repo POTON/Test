@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<!-- Une suite peut comporte plusieurs fichiers xml -->
+<suite name="NonRegression">
+	<suite-files>
+	<!-- Entrez dans le path, le chemin complet jusqu'au fichier XML du projet -->
+		<suite-file path="src/fr/maif/monclubfacile/Mcf0.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf1.xml" />
+	  <suite-file path="src/fr/maif/monclubfacile/Mcf2.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf3.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf4.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf5.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf6.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf7.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf8.xml" />
+	<!--	<suite-file path="src/fr/maif/monclubfacile/Mcf9.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf10.xml" />
+		<suite-file path="src/fr/maif/monclubfacile/Mcf11.xml" />
+		-->	
+	</suite-files>
+</suite>

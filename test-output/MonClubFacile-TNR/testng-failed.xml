@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [MonClubFacile-TNR]">
+  <test thread-count="5" name="NomduProjet-1-chrome(failed)">
+    <parameter name="baseUrl" value="https://monclubfacile.preprod.opunmaif.fr/"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="version" value="55"/>
+    <parameter name="platform" value="WINDOWS"/>
+    <classes>
+      <class name="fr.maif.monclubfacile.tnr.scenarii.ProfilClubEtDeconnexion">
+        <methods>
+          <include name="TestMCF"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- fr.maif.monclubfacile.tnr.scenarii.ProfilClubEtDeconnexion -->
+    </classes>
+  </test> <!-- NomduProjet-1-chrome(failed) -->
+</suite> <!-- Failed suite [MonClubFacile-TNR] -->
